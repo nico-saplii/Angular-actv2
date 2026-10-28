@@ -1,0 +1,46 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; margin-bottom: 25px; }
+.header h1 { color: #2c3e50; margin-bottom: 5px; }
+.header p { color: #7f8c8d; margin: 0; }
+
+.main-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; }
+@media (max-width: 900px) { .main-layout { grid-template-columns: 1fr; } }
+
+.card { background: #ffffff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.card h2 { margin-top: 0; color: #34495e; font-size: 1.2rem; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.85rem; color: #4b6584; }
+.form-group input, .form-group select, .form-group textarea, .search-input {
+  width: 100%; padding: 10px; border: 1px solid #dcdde1; border-radius: 5px; font-size: 0.9rem;
+}
+.search-input { margin-top: 10px; margin-bottom: 15px; }
+
+.button-group { display: flex; gap: 10px; }
+.btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
+.btn-primary { background: #3867d6; color: white; }
+.btn-secondary { background: #718093; color: white; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #f1f2f6; font-size: 0.88rem; }
+th { background-color: #f8f9fa; color: #2d3436; }
+
+.badge { padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; color: white; }
+.badge-alta { background-color: #eb4d4b; }
+.badge-media { background-color: #f0932b; }
+.badge-baja { background-color: #6ab04c; }
+
+.badge-estado { padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+.estado-abierto { background: #eccc68; color: #2f3542; }
+.estado-proceso { background: #70a1ff; color: white; }
+.estado-cerrado { background: #2ed573; color: white; }
+
+.btn-sm { padding: 5px 10px; border: none; border-radius: 4px; cursor: pointer; font-size: 0.75rem; margin-right: 5px; }
+.btn-edit { background: #e1b12c; color: white; }
+.btn-delete { background: #e84118; color: white; }
+
+.alert { padding: 12px; border-radius: 5px; margin-bottom: 15px; font-size: 0.9rem; }
+.alert-danger { background: #ff7979; color: white; }
+.alert-success { background: #badc58; color: #222f3e; }
+.empty-state { text-align: center; color: #a4b0be; padding: 30px 0; }
